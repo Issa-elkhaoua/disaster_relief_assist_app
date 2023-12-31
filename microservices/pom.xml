@@ -7,9 +7,9 @@
   <name>Archetype - microservices</name>
   <url>http://maven.apache.org</url>
 
-
+<packaging>pom</packaging>
   <modules>
-
+  <module>authService</module>
   </modules>
 
   <properties>
