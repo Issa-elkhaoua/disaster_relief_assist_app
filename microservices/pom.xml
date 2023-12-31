@@ -10,6 +10,7 @@
 <packaging>pom</packaging>
   <modules>
   <module>authService</module>
+    <module>eurekaService</module>
   </modules>
 
   <properties>
