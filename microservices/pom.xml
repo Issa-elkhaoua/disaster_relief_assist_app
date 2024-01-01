@@ -11,6 +11,7 @@
   <modules>
   <module>authService</module>
     <module>eurekaService</module>
+    <module> microGatewayService</module>
   </modules>
 
   <properties>
