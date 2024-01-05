@@ -19,10 +19,11 @@ public class LogisticEntity {
     public LogisticEntity() {
     }
 
-    public LogisticEntity(Long logisticId, TypeLogistic type, Status status) {
+    public LogisticEntity(Long logisticId, TypeLogistic type, Status status, Integer userId) {
         this.logisticId = logisticId;
         this.type = type;
         this.status = status;
+        this.userId = userId;
     }
 
     public Long getLogisticId() {
@@ -47,5 +48,13 @@ public class LogisticEntity {
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 }

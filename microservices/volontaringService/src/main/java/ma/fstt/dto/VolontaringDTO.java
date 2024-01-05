@@ -6,13 +6,16 @@ public class VolontaringDTO {
     private String skill;
     private String availability;
 
+    private Integer userId;
+
     public VolontaringDTO() {
     }
 
-    public VolontaringDTO(Long volontaringId, String skill, String availability) {
+    public VolontaringDTO(Long volontaringId, String skill, String availability, Integer userId) {
         this.volontaringId = volontaringId;
         this.skill = skill;
         this.availability = availability;
+        this.userId = userId;
     }
 
     public Long getVolontaringId() {
@@ -37,5 +40,13 @@ public class VolontaringDTO {
 
     public void setAvailability(String availability) {
         this.availability = availability;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 }

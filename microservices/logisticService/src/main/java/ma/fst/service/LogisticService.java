@@ -79,8 +79,8 @@ public class LogisticService {
 
         // Update the fields of the existing entity with the values from the updated DTO
         existingLogisticEntity.setType(updatedLogisticDTO.getType());
-        existingLogisticEntity.setAmount(updatedLogisticDTO.getAmount());
-        existingLogisticEntity.setDetails(updatedLogisticDTO.getDetails());
+        existingLogisticEntity.setUserId(updatedLogisticDTO.getUserId());
+        existingLogisticEntity.setStatus(updatedLogisticDTO.getStatus());
 
 
         // Save the updated entity back to the database
@@ -101,17 +101,17 @@ public class LogisticService {
     private LogisticDTO copyLogisticEntityToDto(LogisticEntity logisticEntity) {
         LogisticDTO logisticDTO = new LogisticDTO();
         logisticDTO.setLogisticId(logisticEntity.getLogisticId());
-        logisticDTO.setAmount(logisticEntity.getAmount());
+        logisticDTO.setUserId(logisticEntity.getUserId());
         logisticDTO.setType(logisticEntity.getType());
-        logisticDTO.setDetails(logisticEntity.getDetails());
+        logisticDTO.setStatus(logisticEntity.getStatus());
         return logisticDTO;
     }
 
     private LogisticEntity copyLogisticDtoToEntity(LogisticDTO logisticDTO) {
         LogisticEntity userEntity = new LogisticEntity();
         userEntity.setLogisticId(logisticDTO.getLogisticId());
-        userEntity.setDetails(logisticDTO.getDetails());
-        userEntity.setAmount(logisticDTO.getAmount());
+        userEntity.setStatus(logisticDTO.getStatus());
+        userEntity.setUserId(logisticDTO.getUserId());
         userEntity.setType(logisticDTO.getType());
         return userEntity;
     }

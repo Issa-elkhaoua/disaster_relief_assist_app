@@ -10,13 +10,16 @@ public class LogisticDTO {
 
     private Status status;
 
+    private Integer userId;
+
     public LogisticDTO() {
     }
 
-    public LogisticDTO(Long logisticId, TypeLogistic type, Status status) {
+    public LogisticDTO(Long logisticId, TypeLogistic type, Status status, Integer userId) {
         this.logisticId = logisticId;
         this.type = type;
         this.status = status;
+        this.userId = userId;
     }
 
     public Long getLogisticId() {
@@ -41,5 +44,13 @@ public class LogisticDTO {
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    public Integer getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Integer userId) {
+        this.userId = userId;
     }
 }
