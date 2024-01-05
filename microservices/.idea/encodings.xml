@@ -5,10 +5,13 @@
     <file url="file://$PROJECT_DIR$/assistanceService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/authService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eurekaService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/expressionOfNeedService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gatewayService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/logisticService/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mapService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/microGatewayService/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/volontaringService/src/main/java" charset="UTF-8" />
   </component>
 </project>
