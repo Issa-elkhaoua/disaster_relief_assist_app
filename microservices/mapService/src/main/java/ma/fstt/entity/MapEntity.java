@@ -11,13 +11,16 @@ public class MapEntity {
     private String location;
     private String details;
 
+    private Long logisticId;
+
     public MapEntity() {
     }
 
-    public MapEntity(Long mapId, String location, String details) {
+    public MapEntity(Long mapId, String location, String details, Long logisticId) {
         this.mapId = mapId;
         this.location = location;
         this.details = details;
+        this.logisticId = logisticId;
     }
 
     public Long getMapId() {
@@ -42,5 +45,13 @@ public class MapEntity {
 
     public void setDetails(String details) {
         this.details = details;
+    }
+
+    public Long getLogisticId() {
+        return logisticId;
+    }
+
+    public void setLogisticId(Long logisticId) {
+        this.logisticId = logisticId;
     }
 }

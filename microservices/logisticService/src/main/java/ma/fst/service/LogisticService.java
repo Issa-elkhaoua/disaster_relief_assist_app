@@ -4,6 +4,7 @@ import jakarta.transaction.Transactional;
 import ma.fst.dto.LogisticDTO;
 import ma.fst.dto.UserDTO;
 import ma.fst.entity.LogisticEntity;
+import ma.fst.entity.Status;
 import ma.fst.repo.LogisticRepo;
 import ma.fstt.common.exceptions.RecordNotFoundException;
 import ma.fstt.common.messages.BaseResponse;
@@ -21,6 +22,7 @@ import java.util.stream.Collectors;
 @Service
 @Transactional
 public class LogisticService {
+
     @Autowired
     private LogisticRepo logisticRepo;
 
@@ -117,4 +119,8 @@ public class LogisticService {
     }
 
 
+    public List<LogisticDTO> findByStatus(Status status) {
+        return logisticRepo.findByStatus(status).stream().map(this::copyLogisticEntityToDto).collect(Collectors.toList());
+
+    }
 }

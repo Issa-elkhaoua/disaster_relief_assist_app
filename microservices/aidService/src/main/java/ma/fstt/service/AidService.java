@@ -9,6 +9,7 @@ import ma.fstt.common.utils.Topic;
 import ma.fstt.dto.AidDTO;
 import ma.fstt.dto.UserDTO;
 import ma.fstt.entity.AidEntity;
+import ma.fstt.entity.TypeAid;
 import ma.fstt.repo.AidRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -116,4 +117,7 @@ public class AidService {
         return userEntity;
     }
 
+    public List<AidDTO> findByType(TypeAid type) {
+        return aidRepo.findByType(type).stream().map(this::copyAidEntityToDto).collect(Collectors.toList());
+    }
 }

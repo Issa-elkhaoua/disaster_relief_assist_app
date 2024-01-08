@@ -5,13 +5,16 @@ public class MapDTO {
     private String location;
     private String details;
 
+    private Long logisticId;
+
     public MapDTO() {
     }
 
-    public MapDTO(Long mapId, String location, String details) {
+    public MapDTO(Long mapId, String location, String details, Long logisticId) {
         this.mapId = mapId;
         this.location = location;
         this.details = details;
+        this.logisticId = logisticId;
     }
 
     public Long getMapId() {
@@ -36,5 +39,13 @@ public class MapDTO {
 
     public void setDetails(String details) {
         this.details = details;
+    }
+
+    public Long getLogisticId() {
+        return logisticId;
+    }
+
+    public void setLogisticId(Long logisticId) {
+        this.logisticId = logisticId;
     }
 }
