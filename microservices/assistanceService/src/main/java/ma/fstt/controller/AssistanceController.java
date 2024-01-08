@@ -12,6 +12,9 @@ import ma.fstt.common.messages.BaseResponse;
 import ma.fstt.dto.AssistanceDTO;
 import ma.fstt.service.AssistanceService;
 
+
+
+@CrossOrigin(origins = "http://localhost:4200")
 @Validated
 @RestController
 @RequestMapping("/assistances")

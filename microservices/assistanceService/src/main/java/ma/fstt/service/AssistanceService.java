@@ -26,8 +26,6 @@ public class AssistanceService {
     @Autowired
     private AssistanceRepo assistanceRepo;
 
-    @Value("${auth-service.base-url}")
-    private String authServiceBaseUrl;
 
     private final WebClient webClient;
 

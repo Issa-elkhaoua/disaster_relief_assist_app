@@ -13,6 +13,11 @@
     <module>eurekaService</module>
     <module> microGatewayService</module>
     <module>assistanceService</module>
+    <module>aidService</module>
+    <module>volontaringService</module>
+    <module>expressionOfNeedService</module>
+    <module>mapService</module>
+    <module>logisticService</module>
   </modules>
 
   <properties>
