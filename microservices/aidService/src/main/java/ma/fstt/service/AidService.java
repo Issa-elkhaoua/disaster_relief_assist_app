@@ -105,6 +105,7 @@ public class AidService {
         aidDTO.setAmount(aidEntity.getAmount());
         aidDTO.setType(aidEntity.getType());
         aidDTO.setDetails(aidEntity.getDetails());
+        aidDTO.setUserId(aidEntity.getUserId());
         return aidDTO;
     }
 
@@ -114,6 +115,7 @@ public class AidService {
         userEntity.setDetails(aidDTO.getDetails());
         userEntity.setAmount(aidDTO.getAmount());
         userEntity.setType(aidDTO.getType());
+        userEntity.setUserId(aidDTO.getUserId());
         return userEntity;
     }
 

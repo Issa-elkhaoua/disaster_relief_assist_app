@@ -81,7 +81,6 @@ public class VolontaringService {
 
         // Update the fields of the existing entity with the values from the updated DTO
         existingVolontaringEntity.setAvailability(updatedVolontaringDTO.getAvailability());
-        existingVolontaringEntity.setUserId(updatedVolontaringDTO.getUserId());
         existingVolontaringEntity.setSkill(updatedVolontaringDTO.getSkill());
 
 

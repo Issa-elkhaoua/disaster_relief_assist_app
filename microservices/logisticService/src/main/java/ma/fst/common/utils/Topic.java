@@ -2,7 +2,7 @@ package ma.fstt.common.utils;
 
 public enum Topic {
 
-    ASSISTANCE("Assistance", 101),
+    ASSISTANCE("Data", 101),
     AID("Aid", 102),;
 
     private final String name;

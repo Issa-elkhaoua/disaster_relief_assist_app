@@ -81,7 +81,6 @@ public class LogisticService {
 
         // Update the fields of the existing entity with the values from the updated DTO
         existingLogisticEntity.setType(updatedLogisticDTO.getType());
-        existingLogisticEntity.setUserId(updatedLogisticDTO.getUserId());
         existingLogisticEntity.setStatus(updatedLogisticDTO.getStatus());
 
 

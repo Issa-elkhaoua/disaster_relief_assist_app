@@ -80,7 +80,6 @@ public class MapService {
 
         // Update the fields of the existing entity with the values from the updated DTO
         existingMapEntity.setDetails(updatedMapDTO.getDetails());
-        existingMapEntity.setLogisticId(updatedMapDTO.getLogisticId());
         existingMapEntity.setLocation(updatedMapDTO.getLocation());
 
 

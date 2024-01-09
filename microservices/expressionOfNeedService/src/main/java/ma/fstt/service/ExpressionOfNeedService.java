@@ -83,7 +83,6 @@ public class ExpressionOfNeedService {
         // Update the fields of the existing entity with the values from the updated DTO
         existingExpressionOfNeedEntity.setDescription(updatedExpressionOfNeedDTO.getDescription());
         existingExpressionOfNeedEntity.setUrgence(updatedExpressionOfNeedDTO.getUrgence());
-        existingExpressionOfNeedEntity.setUserId(updatedExpressionOfNeedDTO.getUserId());
 
 
 

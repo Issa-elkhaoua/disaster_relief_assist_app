@@ -28,7 +28,7 @@ public class MapController {
         return new ResponseEntity<List<MapDTO>>(list, HttpStatus.OK);
     }
 
-    @PostMapping(value = { "/request" })
+    @PostMapping(value = { "/add" })
     public ResponseEntity<BaseResponse> createMap(@RequestBody MapDTO userDTO) {
         BaseResponse response = mapService.createOrUpdateMap(userDTO);
         return new ResponseEntity<>(response, HttpStatus.OK);

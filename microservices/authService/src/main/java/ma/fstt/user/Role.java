@@ -1,6 +1,8 @@
 package ma.fstt.user;
 
 public enum Role {
-    USER,
-    ADMIN
+    DONATEUR,
+    ADMIN,
+    VOLONTAIRE,
+    VICTIME
 }

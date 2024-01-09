@@ -82,7 +82,6 @@ public class AssistanceService {
         existingAssistanceEntity.setDescription(updatedAssistanceDTO.getDescription());
         existingAssistanceEntity.setDate(updatedAssistanceDTO.getDate());
         existingAssistanceEntity.setStatus(updatedAssistanceDTO.getStatus());
-        existingAssistanceEntity.setUserId(updatedAssistanceDTO.getUserId());
 
         // Save the updated entity back to the database
         assistanceRepo.save(existingAssistanceEntity);
