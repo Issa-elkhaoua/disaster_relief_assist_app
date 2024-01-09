@@ -28,7 +28,7 @@ public class AidController {
         return new ResponseEntity<List<AidDTO>>(list, HttpStatus.OK);
     }
 
-    @PostMapping(value = { "/request" })
+    @PostMapping(value = { "/add" })
     public ResponseEntity<BaseResponse> createAid(@RequestBody AidDTO userDTO) {
         BaseResponse response = aidService.createOrUpdateAid(userDTO);
         return new ResponseEntity<>(response, HttpStatus.OK);

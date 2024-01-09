@@ -27,7 +27,7 @@ public class ExpressionOfNeedController {
         return new ResponseEntity<List<ExpressionOfNeedDTO>>(list, HttpStatus.OK);
     }
 
-    @PostMapping(value = { "/request" })
+    @PostMapping(value = { "/add" })
     public ResponseEntity<BaseResponse> createExpressionOfNeed(@RequestBody ExpressionOfNeedDTO userDTO) {
         BaseResponse response = expressionOfNeedService.createOrUpdateExpressionOfNeed(userDTO);
         return new ResponseEntity<>(response, HttpStatus.OK);

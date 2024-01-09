@@ -25,7 +25,7 @@ public class VolontaringController {
         return new ResponseEntity<List<VolontaringDTO>>(list, HttpStatus.OK);
     }
 
-    @PostMapping(value = { "/request" })
+    @PostMapping(value = { "/add" })
     public ResponseEntity<BaseResponse> createVolontaring(@RequestBody VolontaringDTO userDTO) {
         BaseResponse response = volontaringService.createOrUpdateVolontaring(userDTO);
         return new ResponseEntity<>(response, HttpStatus.OK);

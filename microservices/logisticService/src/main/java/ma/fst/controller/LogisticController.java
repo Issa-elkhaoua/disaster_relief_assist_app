@@ -27,7 +27,7 @@ public class LogisticController {
         return new ResponseEntity<List<LogisticDTO>>(list, HttpStatus.OK);
     }
 
-    @PostMapping(value = { "/request" })
+    @PostMapping(value = { "/add" })
     public ResponseEntity<BaseResponse> createLogistic(@RequestBody LogisticDTO userDTO) {
         BaseResponse response = logisticService.createOrUpdateLogistic(userDTO);
         return new ResponseEntity<>(response, HttpStatus.OK);
