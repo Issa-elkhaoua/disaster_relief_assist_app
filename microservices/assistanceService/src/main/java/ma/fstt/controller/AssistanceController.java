@@ -14,7 +14,7 @@ import ma.fstt.service.AssistanceService;
 
 
 
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "http://localhost:4200", allowCredentials = "true")
 @Validated
 @RestController
 @RequestMapping("/assistances")
